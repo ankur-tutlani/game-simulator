@@ -433,7 +433,7 @@ def simulation_function_payoff(num_rows,
     iterate_all = iterate_all
 
     initial_history = initial_history
-	dotprod =lambda K, L: reduce(lambda z1, z2: z1+z2, map(lambda x: reduce(lambda x1, x2: x1*x2, x), zip(K, L))) if len(K)==len(L) else 0
+    dotprod = lambda K, L: reduce(lambda z1, z2: z1+z2, map(lambda x: reduce(lambda x1, x2: x1*x2, x), zip(K, L))) if len(K)==len(L) else 0
 
     timeperiod = timeperiod
     iteration_name = iteration_name
