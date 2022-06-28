@@ -12,7 +12,7 @@ This library is used to help decide which of the strategy has the potential to b
   # Import
   from game_simulator import simulation
 
-  # first approach 
+  # Execute (first approach)
     simulation.simulation_function(num_rows=2,
                         num_cols=3,
                         memory_length=2,
@@ -24,7 +24,7 @@ This library is used to help decide which of the strategy has the potential to b
                         column_player_payoffs=[1,2,1,3,2,2],
                         path_to_save_output='C:\\Users\\Downloads\\')
 
-# second approach
+# Execute (second approach)
     simulation.simulation_function_payoff(num_rows=2,
                         num_cols=3,
                         memory_length=2,
