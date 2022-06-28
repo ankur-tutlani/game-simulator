@@ -1,7 +1,7 @@
 
 # Game Simulator
 
-This library is used to help decide which of the strategy has the potential to become a norm when agents play the game repeatedly over a period of time. This game could be any game with defined row and column players’ payoff values and finite strategies.
+This library is used to help decide which of the strategy has the potential to become a norm when agents play the game repeatedly over a period of time. This game could be any game with defined row and column players’ payoff values and finite strategies. Any strategy evolving as a norm implies strategy is being played relatively more frequently by the agents. 
 
 ## How to use it?
 
