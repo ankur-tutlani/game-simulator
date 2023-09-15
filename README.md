@@ -200,9 +200,14 @@ The format of these files starts with whether the results are for selected initi
 Column "keys" in the excel contains the strategy position. "Count" or "count1" contains the percentage of times that particular strategy is being played. Column "initial_history" is the strategy positions with which the game started and "timeperiod" shows the incremental time period when the agents were in that state.
 
 
-There will be 2 image files (jpeg) gets generated if we execute the graphs related function. "function_to_generate_graphs function" would generate graph with time period on X-axis and Count% on Y-axis. The Count % indicates the percentage of times, a specific action pair is being observed considering all prior history till that point in time. The sum of Count% across all potential strategy/action pairs at any given period equals 100.
+There will be 2 image files (jpeg) gets generated if we execute the graphs related function. "function_to_generate_graphs function" would generate graph with time period on X-axis and Count% on Y-axis. The Count % indicates the percentage of times, a specific action pair is being observed considering all prior history till that point in time. The sum of Count% across all potential strategy/action pairs at any given period equals 100. Below is sample output of Count% graph.
 
-The second function, "function_to_generate_cumulative_graphs" generates cumulative graph. This shows the presence or absence of specific action pair at any given time period. If a specific action pair is being played during that period, its count gets incremented by 1. If that pair is not being observed in future period, the cumulative count stays the same for future time periods. Hence, the output of this graph is cumulative count of action pairs at each time period. This graph is useful in scenarios where we observe any one specific action pair is being played at any given time and we want to see how that is changing over time.
+![](https://github.com/ankur-tutlani/game-simulator/raw/main/PercentCountgraph.png)
+
+The second function, "function_to_generate_cumulative_graphs" generates cumulative graph. This shows the presence or absence of specific action pair at any given time period. If a specific action pair is being played during that period, its count gets incremented by 1. If that pair is not being observed in future period, the cumulative count stays the same for future time periods. Hence, the output of this graph is cumulative count of action pairs at each time period. This graph is useful in scenarios where we observe any one specific action pair is being played at any given time and we want to see how that is changing over time. Below is sample output of Cumulative Count graph.
+
+![](https://github.com/ankur-tutlani/game-simulator/raw/main/CumulativeCountgraph.png)
 
 Both these graphs functions would generate graphs considering a specific initial state. If the "timeperiod" excel contains results from multiple initial states, then there would be multiple graphs generated for each individual initial state. The specific initial state considered would be in the file name with _ after the figure name provided.
- 
+
+
