@@ -1,7 +1,7 @@
 
 # Game Simulator
 
-This library is used to help decide which of the strategy has the potential to become a norm when agents play the game repeatedly over a period of time. This game could be any game with defined row and column players" payoff values and finite strategies. Any strategy evolving as a norm implies strategy is being played relatively more frequently by the agents.
+This library analyzes strategy evolution in normal-form games, focusing on how various factors such as initial state, payoff values, memory length, randomness in decision-making, and response functions shape the path to final outcomes. By tracking agent interactions over time, it reveals the key transitions, identifying what drives strategic shifts and when they occur.
 ## How to use it?
 
 
