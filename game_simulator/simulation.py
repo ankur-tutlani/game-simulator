@@ -268,7 +268,8 @@ def simulation_function_random(num_rows,
             foo_last["count1"] = round(foo_last["count1"]*100,2)
             foo_last = foo_last[["keys","initial_history","count1"]]
             foo_last["timeperiod"] = uuu
-            trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+            #trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+            trend_db_to_store = pd.concat([trend_db_to_store, foo_last], ignore_index=True)
         
         
         
@@ -451,7 +452,8 @@ def simulation_function_random(num_rows,
             foo["count"] = round(foo["count"]*100,2)
             
             
-            foo_to_fill = foo_to_fill.append(foo,ignore_index=True)
+            #foo_to_fill = foo_to_fill.append(foo,ignore_index=True)
+            foo_to_fill = pd.concat([foo_to_fill,foo],ignore_index=True)
             #print(zz)
             
           ###### Get trend ###
@@ -474,7 +476,8 @@ def simulation_function_random(num_rows,
                 foo_last["count1"] = round(foo_last["count1"]*100,2)
                 foo_last = foo_last[["keys","initial_history","count1"]]
                 foo_last["timeperiod"] = uuu
-                trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+                #trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+                trend_db_to_store = pd.concat([trend_db_to_store, foo_last], ignore_index=True)
             
             
 
@@ -832,7 +835,8 @@ def simulation_function_payoff_random(num_rows,
             foo_last["count1"] = round(foo_last["count1"]*100,2)
             foo_last = foo_last[["keys","initial_history","count1"]]
             foo_last["timeperiod"] = uuu
-            trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+            #trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+            trend_db_to_store = pd.concat([trend_db_to_store, foo_last], ignore_index=True)
 
 
 
@@ -1080,7 +1084,8 @@ def simulation_function_payoff_random(num_rows,
             foo["count"] = foo["count"]/sum(foo["count"])
             foo["count"] = round(foo["count"]*100,2)
 
-            foo_to_fill = foo_to_fill.append(foo,ignore_index=True)
+            #foo_to_fill = foo_to_fill.append(foo,ignore_index=True)
+            foo_to_fill = pd.concat([foo_to_fill,foo],ignore_index=True)
 
 
             for uuu in range(len(TimePeriodCart_prod_store)):
@@ -1101,7 +1106,8 @@ def simulation_function_payoff_random(num_rows,
                 foo_last["count1"] = round(foo_last["count1"]*100,2)
                 foo_last = foo_last[["keys","initial_history","count1"]]
                 foo_last["timeperiod"] = uuu
-                trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+                #trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+                trend_db_to_store = pd.concat([trend_db_to_store, foo_last], ignore_index=True)
 
 
 
@@ -1406,7 +1412,8 @@ def simulation_function_payoff(num_rows,
             foo_last["count1"] = round(foo_last["count1"]*100,2)
             foo_last = foo_last[["keys","initial_history","count1"]]
             foo_last["timeperiod"] = uuu
-            trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+            #trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+            trend_db_to_store = pd.concat([trend_db_to_store, foo_last], ignore_index=True)
 
 
 
@@ -1608,7 +1615,8 @@ def simulation_function_payoff(num_rows,
             foo["count"] = foo["count"]/sum(foo["count"])
             foo["count"] = round(foo["count"]*100,2)
 
-            foo_to_fill = foo_to_fill.append(foo,ignore_index=True)
+            #foo_to_fill = foo_to_fill.append(foo,ignore_index=True)
+            foo_to_fill = pd.concat([foo_to_fill,foo],ignore_index=True)
 
 
             for uuu in range(len(TimePeriodCart_prod_store)):
@@ -1629,7 +1637,8 @@ def simulation_function_payoff(num_rows,
                 foo_last["count1"] = round(foo_last["count1"]*100,2)
                 foo_last = foo_last[["keys","initial_history","count1"]]
                 foo_last["timeperiod"] = uuu
-                trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+                #trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+                trend_db_to_store = pd.concat([trend_db_to_store, foo_last], ignore_index=True)
 
 
 
@@ -1867,7 +1876,8 @@ def simulation_function(num_rows,
             foo_last["count1"] = round(foo_last["count1"]*100,2)
             foo_last = foo_last[["keys","initial_history","count1"]]
             foo_last["timeperiod"] = uuu
-            trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+            #trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+            trend_db_to_store = pd.concat([trend_db_to_store, foo_last], ignore_index=True)
         
         
         
@@ -2004,7 +2014,8 @@ def simulation_function(num_rows,
             foo["count"] = round(foo["count"]*100,2)
             
             
-            foo_to_fill = foo_to_fill.append(foo,ignore_index=True)
+            #foo_to_fill = foo_to_fill.append(foo,ignore_index=True)
+            foo_to_fill = pd.concat([foo_to_fill,foo],ignore_index=True)
             #print(zz)
             
           ###### Get trend ###
@@ -2027,7 +2038,8 @@ def simulation_function(num_rows,
                 foo_last["count1"] = round(foo_last["count1"]*100,2)
                 foo_last = foo_last[["keys","initial_history","count1"]]
                 foo_last["timeperiod"] = uuu
-                trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+                #trend_db_to_store = trend_db_to_store.append(foo_last,ignore_index=True)
+                trend_db_to_store = pd.concat([trend_db_to_store, foo_last], ignore_index=True)
             
             
 
